@@ -7,6 +7,7 @@ import useBreedList from './useBreedList';
 const ANIMALS = ['bird', 'cat', 'dog', 'rabbit', 'reptile'];
 
 const SearchParams = () => {
+  // refer to ThemeContext.js, the output of th ThemeContext is the output of the useState
   const [theme, setTheme] = useContext(ThemeContext);
   const [location, updateLocation] = useState('Seattle, WA');
   const [animal, updateAnimal] = useState('');
